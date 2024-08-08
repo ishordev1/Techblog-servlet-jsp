@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <error-page>
+ <error-code>404</error-code>
+ <location>/error_page.jsp</location>
+ </error-page>
+<servlet>
+<servlet-name>s</servlet-name>
+<servlet-class>com.techblog.servlet.RegisterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>s</servlet-name>
+<url-pattern>/RegisterServlet</url-pattern>
+</servlet-mapping>
+ 
+ 
+ <servlet>
+<servlet-name>login</servlet-name>
+<servlet-class>com.techblog.servlet.LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>login</servlet-name>
+<url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>logout</servlet-name>
+ <servlet-class>com.techblog.servlet.logoutServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>logout</servlet-name>
+ <url-pattern>/logoutServlet</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+ <servlet-name>editprofile</servlet-name>
+ <servlet-class>com.techblog.servlet.EditServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>editprofile</servlet-name>
+ <url-pattern>/EditServlet</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ <servlet-name>addP</servlet-name>
+ <servlet-class>com.techblog.servlet.AddPostServlet</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>addP</servlet-name>
+ <url-pattern>/AddPostServlet</url-pattern>
+ </servlet-mapping>
+ 
+
+ 
+  <display-name>techblog</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
